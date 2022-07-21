@@ -105,7 +105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('./images/music.jpg');
+  background: url('../images/music.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 320px;
