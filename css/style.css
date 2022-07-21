@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Indie+Flower&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cookie', cursive;
+}
+body {
+  position: relative;
+}
+.navbar {
+  font-size: 1.5rem;
+}
+.brand {
+  width: 50px;
+  height: 50px;
+}
+.about {
+  display: flex;
+  position: relative;
+  font-size: 1.5rem;
+}
+.about h3 {
+  font-size: 2rem;
+}
+.about::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.62);
+  opacity: 0;
+}
+.about img {
+  width: 100%;
+}
+.content {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  top: 42%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+  color: white;
+}
+.content h3 {
+  font-size: 1.8rem;
+}
+.content p {
+  font-size: 1rem;
+}
+.about:hover .content {
+  opacity: 1;
+  left: 50%;
+}
+.about:hover::after {
+  opacity: 1;
+}
+
+.hkImg {
+  width: 100%;
+}
+.heading {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 2.4rem;
+  color: crimson;
+  /* background-color: black; */
+}
+.details {
+  display: flex;
+  background-color: black;
+  color: white;
+}
+.story {
+  flex: 1 1 0;
+  width: 0;
+  text-align: center;
+}
+.story p {
+  font-size: 1.5rem;
+}
+.main-container {
+  background-color: black;
+}
+.left-container {
+  display: flex;
+  margin: 90px 10px;
+  border: 1px solid crimson;
+  padding: 20px;
+  border-radius: 20px;
+}
+.songItem {
+  background-color: white;
+  color: black;
+}
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/images/music.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  margin: 20px 10px;
+  background-color: white;
+  padding: 20px;
+}
+.songList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.songList h3 {
+  font-size: 1.8rem;
+  color: crimson;
+}
+.songItemContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin: 34px 0;
+}
+.songItem {
+  display: flex;
+  background-color: white;
+  color: black;
+  height: 40px;
+  margin: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 34px;
+}
+.songItem img {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+#progressBar {
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.icons img {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+.timestamp {
+  margin-left: 5px;
+}
+i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.pause {
+  display: none;
+}
+.pause.active {
+  display: inline;
+}
+.play {
+  display: none;
+}
+.songInfo {
+  position: absolute;
+  font-size: 1.5rem;
+  left: 73vw;
+  /* top: 85%; */
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.footer {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.footer .footer-detail {
+  line-height: 30%;
+  border-top: 1px solid white;
+  position: absolute;
+  background-color: black;
+  color: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 1.3rem;
+  padding-right: 50px;
+  padding-top: 10px;
+}
+@media (min-width: 360px) and (max-width: 800px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .story {
+    flex: 0 0 1;
+    width: 100%;
+    text-align: center;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-container {
+    width: 70vw;
+  }
+  .songItemContainer {
+    width: 60vw;
+  }
+  .right-container {
+    margin-bottom: 25%;
+  }
+  .songInfo {
+    position: absolute;
+    left: 40vw;
+    font-size: 1.5rem;
+    /* top: 40%; */
+  }
+}
+input[type='range'] {
+  -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: black;
+  margin-top: -4px;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+#masterSongName {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: black;
+}
