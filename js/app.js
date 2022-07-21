@@ -2,97 +2,97 @@ const songs = [
   {
     name: 'Duniya',
     path: '/songs/1.mp3',
-    cover: '/images/covers/1.jpg'
+    cover: './images/covers/1.jpg'
   },
   {
     name: 'Aaj din chadeya',
     path: '/songs/2.mp3',
-    cover: '/images/covers/2.jpg'
+    cover: './images/covers/2.jpg'
   },
   {
     name: 'Feeling',
     path: '/songs/3.mp3',
-    cover: '/images/covers/3.jpg'
+    cover: './images/covers/3.jpg'
   },
   {
     name: 'Humnava',
     path: '/songs/4.mp3',
-    cover: '/images/covers/4.jpg'
+    cover: './images/covers/4.jpg'
   },
   {
     name: 'O More Saiyaan',
     path: '/songs/5.mp3',
-    cover: '/images/covers/5.jpg'
+    cover: './images/covers/5.jpg'
   },
   {
     name: 'Tune jo na kaha',
     path: '/songs/6.mp3',
-    cover: '/images/covers/6.jpg'
+    cover: './images/covers/6.jpg'
   },
   {
     name: 'Dil ke pass',
     path: '/songs/7.mp3',
-    cover: '/images/covers/7.jpg'
+    cover: './images/covers/7.jpg'
   },
   {
     name: 'Chup chup ke',
     path: '/songs/8.mp3',
-    cover: '/images/covers/8.jpg'
+    cover: './images/covers/8.jpg'
   },
   {
     name: 'Humsafar',
     path: '/songs/9.mp3',
-    cover: '/images/covers/9.jpeg'
+    cover: './images/covers/9.jpeg'
   },
   {
     name: 'Waaliyaan',
     path: '/songs/10.mp3',
-    cover: '/images/covers/10.jpg'
+    cover: './images/covers/10.jpg'
   },
   {
     name: 'Hai apna dil awara',
     path: '/songs/11.mp3',
-    cover: '/images/covers/11.jpg'
+    cover: './images/covers/11.jpg'
   },
   {
     name: 'Hasi',
     path: '/songs/12.mp3',
-    cover: '/images/covers/12.jpg'
+    cover: './images/covers/12.jpg'
   },
   {
     name: 'Kal ho na ho',
     path: '/songs/13.mp3',
-    cover: '/images/covers/13.jpg'
+    cover: './images/covers/13.jpg'
   },
   {
     name: 'Main rahoon na rahoon',
     path: '/songs/14.mp3',
-    cover: '/images/covers/14.jpg'
+    cover: './images/covers/14.jpg'
   },
   {
     name: 'Likhe jo khat tujhe',
     path: '/songs/15.mp3',
-    cover: '/images/covers/15.jpg'
+    cover: './images/covers/15.jpg'
   },
   {
     name: 'Meri samne wali',
     path: '/songs/16.mp3',
-    cover: '/images/covers/16.jpg'
+    cover: './images/covers/16.jpg'
   },
   {
     name: 'Mera dil bhi',
     path: '/songs/17.mp3',
-    cover: '/images/covers/17.jpg'
+    cover: './images/covers/17.jpg'
   },
   {
     name: 'Mere liye',
     path: '/songs/18.mp3',
-    cover: '/images/covers/18.jpg'
+    cover: './images/covers/18.jpg'
   },
   {
     name: 'Ajab si',
     path: '/songs/19.mp3',
-    cover: '/images/covers/19.jpg'
+    cover: './images/covers/19.jpg'
   }
 ];
 
