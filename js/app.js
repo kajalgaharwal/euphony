@@ -304,7 +304,7 @@ function updateSongs(removeIndex, activeIndex) {
   // togglePlayIcons();
 }
 //story typewriter
-var text2 = 'Story | Memories';
+var text2 = 'Story';
 var about_type = document.querySelector('#memories');
 var obs2 = new IntersectionObserver(
   entries => {
